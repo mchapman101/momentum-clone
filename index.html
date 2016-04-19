@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="base/normalize.css">
+    <link rel="stylesheet" href="base/reset.css">
+
+</head>
+
+<body ng-controller="mainCtrl" ng-style="setBackground()">
+    <div id="wrapper">
+        <div class="navbar">
+
+            <navbar></navbar>
+        </div>
+
+        <section class="main-container">
+            <ui-view></ui-view>
+        </section>
+
+        <div id="footer">
+            <foot-bar></foot-bar>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+
+    </script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
+    <script src="js/quoteService.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/quoteController.js"></script>
+    <script src="js/horoscopeService.js"></script>
+    <script src="js/horoscopeController.js"></script>
+
+</body>
+
+</html>

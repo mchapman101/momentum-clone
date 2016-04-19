@@ -1,0 +1,12 @@
+<div class="home-wrapper">
+
+    <span id="date" my-current-time="dateformat"></span>
+    <div id="clock" ng-controller="timeController">
+        <!-- Date format: <input ng-model="format"> <hr/> -->
+        <span my-current-time="format"></span>
+    </div>
+
+    <div class="quoteBox" ng-controller="quoteController">
+        {{quote.value.joke}}
+    </div>
+</div>
