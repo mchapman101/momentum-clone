@@ -1,0 +1,20 @@
+<section class="horoscopes-container" ng-controller="horoscopeController">
+    <div class="horoscope-section">
+        <h2 id="pick-your-sign">Pick your sign</h2>
+
+        <div id="the-signs" >
+        <div ng-repeat="horoscope in horoscopes" class="horoscope-sign-menu">
+
+            <h3 id="sign-me-up" ng-click='makePrediction(horoscope)'>{{horoscope.sign}}</h3>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="horoscope-prediction-viewport">
+        <p id="fade-in-out">{{selectedHoroscope.prediction}}</p>
+
+    </div>
+
+</section>
+<p id="onion-warning"> Powered by The Onion</p>

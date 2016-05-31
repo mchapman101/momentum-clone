@@ -1,9 +1,10 @@
-angular.module("app", ['ui.router', 'ngAnimate'])
+angular.module("app", ['ui.router', 'ngAnimate',])
 
 .config(['$stateProvider','$urlRouterProvider',
   function(stateProvider, urlRouterProvider){
 
     urlRouterProvider.otherwise('/home');
+    
     stateProvider
       .state('home', {
         url: '/home',
@@ -11,11 +12,11 @@ angular.module("app", ['ui.router', 'ngAnimate'])
       })
      .state('horoscopes', {
        url:'/horoscopes',
-       templateUrl: "views/horoscopes.html"
+       templateUrl: "views/horoscopes2.html"
      })
      .state('calender', {
        url:'/calender',
        templateUrl: "views/calender.html"
      });
 
-  }])
+  }]);

@@ -3,7 +3,7 @@ angular.module("app").service("horoscopesService", function($http){
 
   this.getHoroscope = function() {
     var getUrl = 'http://a.knrz.co/horoscope-api/current';
-    console.log("hit1")
+    // console.log("hit1")
     return $http({
       method: 'GET',
       url: getUrl,

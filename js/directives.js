@@ -2,7 +2,7 @@ angular.module('app')
 
 .controller('timeController', ['$scope', function($scope) {
   $scope.format = 'h:mm:ss a';
-  $scope.dateFormat = 'mm:dd:yy;'
+  $scope.dateFormat = 'mm:dd:yy;';
 }])
 
 
@@ -22,11 +22,6 @@ angular.module('app')
       updateTime();
     });
     //
-    // element.on('$destroy', function() {
-    //   $interval.cancel(timeoutId);
-    // });
-
-    // start the UI update process; save the timeoutId for canceling
     timeoutId = $interval(function() {
       updateTime(); // update DOM
     }, 1000);
@@ -41,20 +36,12 @@ angular.module('app')
   return {
     restrict:'EA',
     templateUrl: "views/navbar.html"
-    }
+  };
   })
 
 .directive('footBar', function(){
   return {
     restrict:'EA',
     templateUrl: 'views/footBar.html'
-  }
-})
-
-
-
-
-
-
-
-///end
+  };
+});
