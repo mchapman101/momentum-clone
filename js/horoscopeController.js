@@ -1,15 +1,15 @@
 angular.module("app").controller("horoscopeController", function($scope, horoscopesService){
 
-$scope.horoscopes;
+$scope.horoscopes =  horoscopesService.getHoroscope()
 
-  $scope.getHoroscope = function(){
-    horoscopesService.getHoroscope().then(function(response){
+  // $scope.getHoroscope = function(){
+  //   horoscopesService.getHoroscope().then(function(response){
+  //
+  //   return $scope.horoscopes = response;
+  // })
 
-    return $scope.horoscopes = response;
-  })
-
-}
-$scope.getHoroscope();
+// }
+// $scope.getHoroscope();
 
 $scope.makePrediction = function(obj){
   $scope.selectedHoroscope = obj;

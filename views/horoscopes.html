@@ -1,8 +1,0 @@
-<section class="horoscopes-container" ng-controller="horoscopeController">
-<div ng-repeat="horoscope in horoscopes" class="horoscope-card {{horoscope.sign}}" ng-click="showme = !showme">
-    <h2>{{horoscope.sign}}</h2>
-    <hr/>
-    <p ng-show="showme" class="fade-in-out">{{horoscope.prediction}}</p>
-
-  </div>
-</section>
